@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Tip <%= profile?.name %> </title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,viewport-fit=cover"
+    />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <title>AN tipping</title>
+    <script
+      defer="defer"
+      src="https://cdn.jsdelivr.net/gh/metaforo/comment3/dist/metaforo-sdk.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="metaforo-tip"
+      style="
+        width: 200px;
+        height: 50px;
+        background-color: #5200ff;
+        color: #ffffff;
+        text-align: center;
+        user-select: none;
+      "
+      siteName="Arweave News"
+      pageId="INPUT_PAGE_ID"
+      receiverAddress="<%= profile?.address %>"
+      receiverUsername="<%- profile?.name %>"
+      receiverChainId="1"
+      theme="dark"
+    >
+      Metaforo Tipping
+    </div>
+  </body>
+</html>
